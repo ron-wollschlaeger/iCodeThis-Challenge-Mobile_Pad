@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iCodeThis - Challenge: Mobile Pad</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+
+  <body class="relative flex min-h-screen items-center justify-center bg-gradient-to-tr from-[#050c26] to-[#142443] font-light text-white">
+    <!-- Funny Background Stuff - START -->
+    <div class="bg-center[mask-image:linear-gradient(white,rgba(255,255,255,10))] absolute inset-0 z-0 animate-pulse overflow-hidden">
+      <svg class="rotate-6 scale-150 stroke-white/10 opacity-10" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern id="smallGrid" width="8" height="8" patternUnits="userSpaceOnUse">
+            <path d="M 8 0 L 0 0 0 8" fill="none" stroke="white" stroke-width="0.5" />
+          </pattern>
+          <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+            <rect width="80" height="80" fill="url(#smallGrid)" />
+            <path d="M 80 0 L 0 0 0 80" fill="none" stroke="white" stroke-width="0.5" />
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#grid)" />
+      </svg>
+    </div>
+
+    <!-- Thanks Johan, for this awesome paricles! Check him out -> https://codepen.io/bob6664569/pen/rOzmve -->
+    <div id="particles-js"></div>
+    <!-- Funny Background Stuff - END -->
+
+    <main class="z-10 w-full max-w-[450px] bg-[#050c26] p-12 text-[#e7e7e8] drop-shadow-2xl">
+      <h1 class="text-h1 mb-1 text-center sm:mb-3">0748 869 733</h1>
+      <h2 class="text-h2 mb-6 text-center sm:mb-12">iCodeThis - Support Hotline</h2>
+
+      <div class="grid grid-cols-3 grid-rows-5 gap-2 px-2 sm:px-6 text-center sm:gap-4">
+        <div class="flex aspect-square flex-col items-center justify-center rounded-full border border-[#d4820c] font-bold hover:cursor-pointer hover:bg-[#d4820c] text-numbers">
+          <span>1</span>
+        </div>
+        <div class="flex aspect-square flex-col items-center justify-center rounded-full border border-[#d4820c] font-bold hover:cursor-pointer hover:bg-[#d4820c] text-numbers">
+          <span>2</span>
+          <span class="text-abc uppercase">abc</span>
+        </div>
+        <div class="flex aspect-square flex-col items-center justify-center rounded-full border border-[#d4820c] font-bold hover:cursor-pointer hover:bg-[#d4820c] text-numbers">
+          <span>3</span>
+          <span class="text-abc uppercase">def</span>
+        </div>
+        <div class="flex aspect-square flex-col items-center justify-center rounded-full border border-[#d4820c] font-bold hover:cursor-pointer hover:bg-[#d4820c] text-numbers">
+          <span>4</span>
+          <span class="text-abc uppercase">ghi</span>
+        </div>
+        <div class="flex aspect-square flex-col items-center justify-center rounded-full border border-[#d4820c] font-bold hover:cursor-pointer hover:bg-[#d4820c] text-numbers">
+          <span>5</span>
+          <span class="text-abc uppercase">jkl</span>
+        </div>
+        <div class="flex aspect-square flex-col items-center justify-center rounded-full border border-[#d4820c] font-bold hover:cursor-pointer hover:bg-[#d4820c] text-numbers">
+          <span>6</span>
+          <span class="text-abc uppercase">mno</span>
+        </div>
+        <div class="flex aspect-square flex-col items-center justify-center rounded-full border border-[#d4820c] font-bold hover:cursor-pointer hover:bg-[#d4820c] text-numbers">
+          <span>7</span>
+          <span class="text-abc uppercase">pqrs</span>
+        </div>
+        <div class="flex aspect-square flex-col items-center justify-center rounded-full border border-[#d4820c] font-bold hover:cursor-pointer hover:bg-[#d4820c] text-numbers">
+          <span>8</span>
+          <span class="text-abc uppercase">tuv</span>
+        </div>
+        <div class="flex aspect-square flex-col items-center justify-center rounded-full border border-[#d4820c] font-bold hover:cursor-pointer hover:bg-[#d4820c] text-numbers">
+          <span>9</span>
+          <span class="text-abc uppercase">xyz</span>
+        </div>
+        <div class="flex aspect-square flex-col items-center justify-center rounded-full border border-[#d4820c] font-bold hover:cursor-pointer hover:bg-[#d4820c] text-numbers">
+          <span>*</span>
+        </div>
+        <div class="flex aspect-square flex-col items-center justify-center rounded-full border border-[#d4820c] font-bold hover:cursor-pointer hover:bg-[#d4820c] text-numbers">
+          <span>0</span>
+        </div>
+        <div class="flex aspect-square flex-col items-center justify-center rounded-full border border-[#d4820c] font-bold hover:cursor-pointer hover:bg-[#d4820c] text-numbers">
+          <span>#</span>
+        </div>
+        <div class="hover:fill flex items-center justify-center hover:cursor-pointer">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-plus h-8 w-8 hover:stroke-[#d4820c]" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M12 5l0 14"></path>
+            <path d="M5 12l14 0"></path>
+          </svg>
+        </div>
+        <div class="flex items-center justify-center rounded-full border border-[#d4820c] bg-[#d4820c] hover:cursor-pointer hover:bg-green-600 hover:border-green-600">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone h-8 w-8" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2"></path>
+          </svg>
+        </div>
+        <div class="hover:fill flex items-center justify-center hover:cursor-pointer">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-backspace h-8 w-8 hover:stroke-[#d4820c]" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path d="M20 6a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-11l-5 -5a1.5 1.5 0 0 1 0 -2l5 -5z"></path>
+            <path d="M12 10l4 4m0 -4l-4 4"></path>
+          </svg>
+        </div>
+      </div>
+
+      <button class="absolute -bottom-[4.25rem] left-0 z-0 rounded-b-2xl bg-[#050c26] p-6 hover:bg-[#d4820c] sm:-right-[4.25rem] sm:bottom-auto sm:left-auto sm:top-0 sm:rounded-b-none sm:rounded-r-2xl">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-dialpad-filled sm:w-h-10 h-5 w-5 sm:h-10" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+          <path d="M6 2h-2a2 2 0 0 0 -2 2v2a2 2 0 0 0 2 2h2a2 2 0 0 0 2 -2v-2a2 2 0 0 0 -2 -2z" stroke-width="0" fill="currentColor"></path>
+          <path d="M20 2h-2a2 2 0 0 0 -2 2v2a2 2 0 0 0 2 2h2a2 2 0 0 0 2 -2v-2a2 2 0 0 0 -2 -2z" stroke-width="0" fill="currentColor"></path>
+          <path d="M13 2h-2a2 2 0 0 0 -2 2v2a2 2 0 0 0 2 2h2a2 2 0 0 0 2 -2v-2a2 2 0 0 0 -2 -2z" stroke-width="0" fill="currentColor"></path>
+          <path d="M6 9h-2a2 2 0 0 0 -2 2v2a2 2 0 0 0 2 2h2a2 2 0 0 0 2 -2v-2a2 2 0 0 0 -2 -2z" stroke-width="0" fill="currentColor"></path>
+          <path d="M20 9h-2a2 2 0 0 0 -2 2v2a2 2 0 0 0 2 2h2a2 2 0 0 0 2 -2v-2a2 2 0 0 0 -2 -2z" stroke-width="0" fill="currentColor"></path>
+          <path d="M13 9h-2a2 2 0 0 0 -2 2v2a2 2 0 0 0 2 2h2a2 2 0 0 0 2 -2v-2a2 2 0 0 0 -2 -2z" stroke-width="0" fill="currentColor"></path>
+          <path d="M13 16h-2a2 2 0 0 0 -2 2v2a2 2 0 0 0 2 2h2a2 2 0 0 0 2 -2v-2a2 2 0 0 0 -2 -2z" stroke-width="0" fill="currentColor"></path>
+        </svg>
+      </button>
+      <button class="absolute -bottom-[4.25rem] left-[4.25rem] z-0 rounded-b-2xl bg-[#142443] p-6 hover:bg-[#d4820c] sm:-right-[4.25rem] sm:bottom-auto sm:left-auto sm:top-[5.5rem] sm:rounded-b-none sm:rounded-r-2xl">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-address-book sm:w-h-10 h-5 w-5 sm:h-10" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+          <path d="M20 6v12a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2z"></path>
+          <path d="M10 16h6"></path>
+          <path d="M13 11m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+          <path d="M4 8h3"></path>
+          <path d="M4 12h3"></path>
+          <path d="M4 16h3"></path>
+        </svg>
+      </button>
+      <button class="absolute -bottom-[4.25rem] left-[8.5rem] z-0 rounded-b-2xl bg-[#142443] p-6 hover:bg-[#d4820c] sm:-right-[4.25rem] sm:bottom-auto sm:left-auto sm:top-[11rem] sm:rounded-b-none sm:rounded-r-2xl">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock-hour-9 sm:w-h-10 h-5 w-5 sm:h-10" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+          <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+          <path d="M12 12h-3.5"></path>
+          <path d="M12 7v5"></path>
+        </svg>
+      </button>
+    </main>
+
+    <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  </body>
+</html>
